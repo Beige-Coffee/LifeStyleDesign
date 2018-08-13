@@ -35,6 +35,7 @@ To develop my model, I use Selenium to scrape the following information off the 
 # Data Visualization
 Let's look at some graphs!
 <img width="834" alt="screen shot 2018-08-12 at 11 06 54 am" src="https://user-images.githubusercontent.com/34213201/44036537-de037e1e-9ec6-11e8-94af-adc1ba20a60a.png">
+
 After all is said and done, I executed some calculations on the aforementioned data points and was able to graph the number of years it would take me to pay off my debt. To do this, I calculated my monthly net income for each city and assumed I would allocate roughly %30 to debt. Subsequently, I determined how long it would take me to pay off my debt, assuming that I chose to live in a 1-bedroom apparment in the center of the city. This graph displays the resulting calcuations. A quick note of interest: it's interesting how we all know that NYC is extremely expensive, however, it resonates on a deeper level when you actually see NYC *tower* above all of the other cities. It just goes to show how powerful and ingrained human vision is in our emotions.
 
 
