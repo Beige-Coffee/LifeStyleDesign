@@ -158,39 +158,3 @@ def get_avg_salaries(city_urls, cities: List[str]) -> Iterable[Dict[str, Any]]:
                   'avg_salary': avg_salary}
         yield result
     browser.quit()
-
-palo_alto_df = citydf[citydf['city'] == 'Palo-Alto']
-San_Jose_df = citydf[citydf['city'] == 'San-Jose']
-Portland_df = citydf[citydf['city'] == 'Portland']
-Austin_df = citydf[citydf['city'] == 'Austin']
-Denver_df = citydf[citydf['city'] == 'Denver']
-Washington_df = citydf[citydf['city'] == 'Washington']
-Boston_df = citydf[citydf['city'] == 'Boston']
-San_Francisco_df = citydf[citydf['city'] == 'San-Francisco']
-Seattle_df = citydf[citydf['city'] == 'Seattle']
-Atlanta_df = citydf[citydf['city'] == 'Atlanta']
-Los_Angeles_df = citydf[citydf['city'] == 'Los-Angeles']
-Chicago_df = citydf[citydf['city'] == 'Chicago']
-New_York_df = citydf[citydf['city'] == 'New-York']
-Mountain_View_df = citydf[citydf['city'] == 'Mountain-View']
-Santa_Monica_df = citydf[citydf['city'] == 'Santa-Monica']
-Cambridge_df = citydf[citydf['city'] == 'Cambridge']
-Salt_Lake_City_df = citydf[citydf['city'] == 'Salt-Lake-City']
-Raleigh_df = citydf[citydf['city'] == 'Raleigh']
-Nashville_df = citydf[citydf['city'] == 'Nashville']
-Sunnyvale_df = citydf[citydf['city'] == 'Sunnyvale']
-Boulder_df = citydf[citydf['city'] == 'Boulder']
-Irvine_df = citydf[citydf['city'] == 'Irvine']
-Philadelphia_df = citydf[citydf['city'] == 'Philadelphia']
-Santa_Clara_df = citydf[citydf['city'] == 'Santa-Clara']
-Dallas_df = citydf[citydf['city'] == 'Dallas']
-Menlo_Park_df = citydf[citydf['city'] == 'Menlo-Park']
-Bellevue_df = citydf[citydf['city'] == 'Bellevue']
-Charlotte_df = citydf[citydf['city'] == 'Charlotte']
-Cupertino_df = citydf[citydf['city'] == 'Cupertino']
-Plano_df = citydf[citydf['city'] == 'Plano']
-Richmond_df = citydf[citydf['city'] == 'Richmond']
-
-
-# RESOURCES
-# https://files.taxfoundation.org/20180315173118/Tax-Foundation-FF576-1.pdf
