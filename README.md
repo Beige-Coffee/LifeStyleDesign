@@ -6,7 +6,7 @@ The purpose of LifeStyleDesign is to challenge the user (in this case, a student
 
 Over the course of the comming weeks, I will be cleaning up the code so that it is more usable and interpretable as well as adding further insights that I tease out of this exercise. However, I strategically chose to make my work public because I firmly believe that, in this case, the philosophy behind the project is just as important (if not more important) than the code behind the project. With a bit of Existentialist flair, the purpose of this endeavor is not for a user to blindly copy the code but, instead, for a user to strategically and analytically evaluate the choice at hand and make strides to achieve a predetermined goal. This, in essence, is LifeStyleDesign. 
 
-## Quick-Vew Of Parameters
+## Quick-View Of Parameters
   - Cost-of-living for hand-chosen cities
   - My specific monthy expenditures (cups of coffee per month, gym memberships, rent, gas, groceries, etc.)
   - Predicted salary for entry-level data scienctist - specific for each city
