@@ -1,5 +1,12 @@
 # LifeStyleDesign
-LifeStyleDesign is a script that help's students efficiently pay off debt while also enjoying the city in which they live.
+
+## In A Nutshell
+People have preferences. We may like doing yoga in the morning or we might enjoy live-music events on a Friday night. However, many of us also have debt, and this may keep us from doing what we love. LifeStyleDesign is a script that helps students (or anyone) roadmap their lives in many different cities so that they can:
+- Strategically map the number of years to pay off their debt in each city
+- Discover what city-specific salaries they would need to earn to make living in that city possible
+  - This can be helpful for negotiating salaries or imagining your day-to-day life
+- Compare each city by topic-of-interest (Data Science, Hiking, Art, Dance, etc.) to ensure presence of like-minded people
+
 
 ## Motivation
 The purpose of LifeStyleDesign is to challenge the user (in this case, a student) to take part in actively building their life. In doing this, the user is forced to confront new obstacles that they may have otherwise overlooked and, throughout this process, they achieve a deeper level of insight into the objective at hand. For all of the aforementioned reasons, I built LifeStyleDesign to empower individuals to take hold of the data at hand and leverage it to model *all the possible worlds* they may inhabit. In this case, I have modeled **116** distinct worlds to gain insight regarding an obstacle that many students in today's economy face - namely, **debt**. 
@@ -18,7 +25,7 @@ To develop my model, I use Selenium to scrape the following information off the 
     - This number is somewhat arbitrary. I'll admit that I am not actually considering moving to all 29 cities, however, I was mainly interested to see how each city compared to its counterparts across the country.
     - Cost of living data was scraped from www.numbeo.com/cost-of-living/
   - The user-specific monthly expenditures that characterize my lifestyle
-    - I manually sifted through the scraped cost-of-living data so that I could create a **monthly constant** variable which roughly reflected my personal expenditures. This allowed me to calculate my personal cost-of-living for each predetermiend city. For example, the monthly constant I included where:
+    - I manually sifted through the scraped cost-of-living data so that I could create a **monthly constant** variable which roughly reflected my personal expenditures. This allowed me to calculate my personal cost-of-living for each predetermined city. For example, the monthly constant I included where:
       - Number of Cups of Coffee Per Month
       - Taxis/Ubers 
       - Gas
@@ -32,7 +39,7 @@ To develop my model, I use Selenium to scrape the following information off the 
     - This information can be found here: https://files.taxfoundation.org/20180315173118/Tax-Foundation-FF576-1.pdf
 
 
-# Data Visualization
+## Data Visualization
 Let's look at some graphs!
 <img width="834" alt="screen shot 2018-08-12 at 11 06 54 am" src="https://user-images.githubusercontent.com/34213201/44036537-de037e1e-9ec6-11e8-94af-adc1ba20a60a.png">
 
@@ -40,18 +47,22 @@ After all is said and done, I executed some calculations on the aforementioned d
 
 
 
-# Things I am working on...
+## Things I am working on...
 
-As of now, my model is relatively stagnant. By this, I mean that my parameters do not *change over time*. While this certainly does not render the model useless, it does effect its ability to accurately reflect reality. To reiterate the profundity of *change*, I will remind you of a quote by Heraclitus of Ephesus (c. 500 BCE), an ancient Greek philosopher: **“The Only Thing That Is Constant Is Change"**. Using Heraclitus as my guide, I plan on scaling salaries over time and, unfortunately (for my wallet), finding a way to algorithmically incorporate interest on student loans. 
+As of now, my model is relatively stagnant. By this, I mean that my parameters do not *change over time*. While this certainly does not render the model useless, it does affect its ability to accurately reflect reality. To reiterate the profundity of *change*, I will remind you of a quote by Heraclitus of Ephesus (c. 500 BCE), an ancient Greek philosopher: **“The Only Thing That Is Constant Is Change"**. Using Heraclitus as my guide, I plan on scaling salaries over time, and, unfortunately (for my wallet), finding a way to algorithmically incorporate interest on student loans. 
 
-Lastly, another short term goal of mine is to account for each user's specific monthly debt payment. I believe this is crucial because, simply put, it may show that one city simply cannot be considered. To further illustrate this concept, please take a look at the image below.
+Lastly, another short-term goal of mine is to account for each user's specific monthly debt payment. I believe this is crucial because, simply put, it may show that one city simply cannot be considered. To further illustrate this concept, please take a look at the image below.
 
-I can see these additions being most impactful in this short term. For example, if a student were considering moving to four different cities after college  
+![image](https://user-images.githubusercontent.com/34213201/44205615-ce245580-a10b-11e8-8f8f-5034d127119b.png)
 
-#### Sneak Peak...
+**Above:** Graph depicts number of years to pay off debt - assuming user lives in a 1-Bedroom apartment in the city-center and earns that city's average salary for a data analyst.
+
+In the scenario above, you can see that it would take me approximately 195 years to pay off my debt if I moved to NYC. While this is obviously impossible (lenders would never let this happen), it does reflect something true about reality. Namely, the assumption that I originally built into my model to bootstrap it off the ground was that I would put 30% of my net income towards debt every month - and this simply won't work if that amount turns out to be **less** than my monthly minimum. Furthermore, I looked at the data behind this graph and found out that my net monthly income (after living expenses, food, fun, etc.) in NYC was less than $100 - making it obvious why it would take so long to pay off my debt. Now, here is the important part! Given this information, NYC would simply not be an option for me if I were to make this amount of money.
+
+## Sneak Peak...
 
 <img width="785" alt="screen shot 2018-08-12 at 3 33 54 pm" src="https://user-images.githubusercontent.com/34213201/44036543-e07607ca-9ec6-11e8-885b-8c3e34362e7e.png">
 
-In the coming weeks, I will also be experimenting with Meetup.com's API so that I can gather information on the number of Meetup groups in each city, agreggated by topic. The goal is to pair this data with the previously calculated cost-of-living information to form a more accurate characterization of each city. For example, if I was interested in finding a city that had a profusion of data science meetups that I could attend to learn new skills, meet other professionals in the industry, and, more generally, just be surrounded by like-minded people, then using this data would serve as an insightful proxy to that objective.
+In the coming weeks, I will also be experimenting with Meetup.com's API so that I can gather information on the number of Meetup groups in each city, aggregated by topic. The goal is to pair this data with the previously calculated cost-of-living information to form a more accurate characterization of each city. For example, if I was interested in finding a city that had a profusion of data science meetups that I could attend to learn new skills, meet other professionals in the industry, and, more generally, just be surrounded by like-minded people, then using this data would serve as an insightful proxy to that objective.
 
 
