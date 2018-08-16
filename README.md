@@ -2,9 +2,9 @@
 LifeStyleDesign is a script that help's students efficiently pay off debt while also enjoying the city in which they live.
 
 ## Motivation
-The purpose of LifeStyleDesign is to challenge the user (in this case, a student) to take part in actively building their life. In doing this, the driver is forced to confront new obstacles that they may have otherwise overlooked and, throughout this process, they achieve a deeper level of insight into the objective at hand. For all of the aforementioned reasons, I built LifeStyleDesign to empower individuals to take hold of the data at hand and leverage it to model *all the possible worlds* they may inhabit. In this case, I have modeled **116** distinct worlds to gain insight regarding an obstacle that many students in today's economy face - namely, **debt**. 
+The purpose of LifeStyleDesign is to challenge the user (in this case, a student) to take part in actively building their life. In doing this, the user is forced to confront new obstacles that they may have otherwise overlooked and, throughout this process, they achieve a deeper level of insight into the objective at hand. For all of the aforementioned reasons, I built LifeStyleDesign to empower individuals to take hold of the data at hand and leverage it to model *all the possible worlds* they may inhabit. In this case, I have modeled **116** distinct worlds to gain insight regarding an obstacle that many students in today's economy face - namely, **debt**. 
 
-Over the course of the coming weeks, I will be cleaning up the code so that it is more usable and interpretable as well as adding further insights that I tease out of this exercise. However, I strategically chose to make my work public because I firmly believe that, in this case, the philosophy behind the project is just as important (if not more important) than the code behind the project. With a bit of Existentialist flair, the purpose of this endeavor is not for a user to blindly copy the code but, instead, for a user to strategically and analytically evaluate the choice at hand and make strides to achieve a predetermined goal. This, in essence, is LifeStyleDesign. 
+Over the course of the coming weeks, I will be cleaning up the code so that it is more usable and interpretable as well as commenting on further insights that I tease out of this exercise. However, I strategically chose to make my work public because I firmly believe that, in this case, the philosophy behind the project is just as important as the code behind the project. With a bit of an Existentialist flair, the purpose of this endeavor is for a user to strategically and analytically evaluate the choices at hand and make strides to achieve a predetermined goal. This, in essence, is LifeStyleDesign. 
 
 ## Quick-View Of Parameters
   - Cost-of-living for hand-chosen cities
@@ -15,10 +15,10 @@ Over the course of the coming weeks, I will be cleaning up the code so that it i
 ## Detailed Look Into Parameters
 To develop my model, I use Selenium to scrape the following information off the internet:
   - Cost-of-living data for 29 predetermined cities
-    - This number is somewhat arbitrary. I'll admit that I am not actually considering moving to all 29 cities, however, I was mainly interested to see how each city compared to a plethora of diverse locations across the country.
+    - This number is somewhat arbitrary. I'll admit that I am not actually considering moving to all 29 cities, however, I was mainly interested to see how each city compared to its counterparts across the country.
     - Cost of living data was scraped from www.numbeo.com/cost-of-living/
   - The user-specific monthly expenditures that characterize my lifestyle
-    - I manually went through this data and created a **monthly constant** variable, which allowed me to calculate an estimated cost-of-living that is specific to my lifestyle. For example, the monthly constant I included where:
+    - I manually sifted through the scraped cost-of-living data so that I could create a **monthly constant** variable which roughly reflected my personal expenditures. This allowed me to calculate my personal cost-of-living for each predetermiend city. For example, the monthly constant I included where:
       - Number of Cups of Coffee Per Month
       - Taxis/Ubers 
       - Gas
@@ -40,8 +40,18 @@ After all is said and done, I executed some calculations on the aforementioned d
 
 
 
+# Things I am working on...
+
+As of now, my model is relatively stagnant. By this, I mean that my parameters do not *change over time*. While this certainly does not render the model useless, it does effect its ability to accurately reflect reality. To reiterate the profundity of *change*, I will remind you of a quote by Heraclitus of Ephesus (c. 500 BCE), an ancient Greek philosopher: **“The Only Thing That Is Constant Is Change"**. Using Heraclitus as my guide, I plan on scaling salaries over time and, unfortunately (for my wallet), finding a way to algorithmically incorporate interest on student loans. 
+
+Lastly, another short term goal of mine is to account for each user's specific monthly debt payment. I believe this is crucial because, simply put, it may show that one city simply cannot be considered. To further illustrate this concept, please take a look at the image below.
+
+I can see these additions being most impactful in this short term. For example, if a student were considering moving to four different cities after college  
+
 #### Sneak Peak...
 
 <img width="785" alt="screen shot 2018-08-12 at 3 33 54 pm" src="https://user-images.githubusercontent.com/34213201/44036543-e07607ca-9ec6-11e8-885b-8c3e34362e7e.png">
 
-In the coming weeks, I will be experimenting with Meetup.com's API so that I can gather information on the number of Meetup groups in each city that relate to a certain topic. The goal here is to pair this data with the previously calculated cost-of-living information to form a more accurate characterization for each city. For example, if I was really interested in finding a city that had a plethora of data science meetups that I could attend to learn new skills, meet other professionals in the industry, and, more generally, just be surrounded by like-minded people, then using this data would serve as an insightful proxy to that objective.
+In the coming weeks, I will also be experimenting with Meetup.com's API so that I can gather information on the number of Meetup groups in each city, agreggated by topic. The goal is to pair this data with the previously calculated cost-of-living information to form a more accurate characterization of each city. For example, if I was interested in finding a city that had a profusion of data science meetups that I could attend to learn new skills, meet other professionals in the industry, and, more generally, just be surrounded by like-minded people, then using this data would serve as an insightful proxy to that objective.
+
+
