@@ -1,5 +1,5 @@
 # LifeStyleDesign 
-Please note that this is a work-in-progress 
+Please note that this is a work-in-progress. 
 
 Thanks,
 - Austin (Aug, 2018)
