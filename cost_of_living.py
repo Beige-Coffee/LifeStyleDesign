@@ -8,6 +8,7 @@ from typing import List, Tuple, Dict, Any, Generator, Iterable
 
 #____________________________
 # Scrape Salaries
+# Please note - these functions only work for www.numbeo.com
 #____________________________
 
 # Declare cities
