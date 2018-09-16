@@ -2,7 +2,7 @@
 Please note that this is a work-in-progress. 
 
 Thanks,
-- Austin (Aug, 2018)
+- Austin (Sep, 2018)
 
 ## In A Nutshell
 People have preferences. We may enjoy doing yoga in the morning or we might look forward to live-music events on a Friday night. However, many of us also have debt, and this may keep us from doing what we love. LifeStyleDesign is a script that helps students (or anyone) roadmap their lives in many different cities so that they can:
